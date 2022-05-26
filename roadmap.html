@@ -261,9 +261,6 @@
                                 }
                             })
                         }
-                        if (selectedSlideIndex + 1 >= bigSliderNum) {
-                            $("body").css("position", 'unset').css("width", "100%");
-                        }
                     } else if (mouseWheelCount > mouseWheelBuffer && mouseDirection == "up") {
                         $("body").css("position", 'fixed').css("width", "100%");
                         mouseWheelCount = 0;
