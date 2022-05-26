@@ -1,0 +1,164 @@
+@font-face {
+    font-family: Oscine;
+    src: url(../font/Oscine/Oscine.ttf);
+}
+
+@font-face {
+    font-family: 'Oscine Bold';
+    src: url(../font/Oscine-Bold/Oscine-Bold.ttf);
+}
+
+body {
+    font-family: Oscine;
+    p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1088px;
+    }
+}
+
+.font-oscine-bold {
+    font-family: 'Oscine Bold';
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+h1.font-oscine-bold {
+    font-size: 70px;
+    @media (max-width: 768px) { 
+        font-size: 50px;
+    }
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-dark-grey {
+    background-color: $dark_grey;
+}
+
+.text-dark-grey {
+    color: $dark_grey;
+}
+
+.bg-dark-blue {
+    background-color: #050811;
+}
+
+.text-dark-blue {
+    color: #050811;
+}
+
+.bg-blue {
+    background-color: $blue;
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.bg-red {
+    background-color: $red;
+}
+
+.text-red {
+    color: $red;
+}
+
+.bg-soft-blue {
+    background-color: $soft-blue;
+}
+
+.text-soft-blue {
+    color: $soft-blue;
+}
+
+.d-block {
+    display: block;
+}
+
+.text-xlg {
+    font-size: 70px;
+}
+
+.text-lg {
+    font-size: 50px;
+}
+
+.text-md {
+    font-size: 40px;
+}
+
+.font-sm {
+    font-size: 14px;
+}
+
+.text-xm {
+    font-size: 12px;
+}
+
+.text-lineh-1 {
+    line-height: 1;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-regular {
+    font-weight: 400;
+}
+
+.text-extrabold {
+    font-size: 80px;
+}
+
+.flex {
+    display: flex;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.relative {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .sm-text-center {
+        text-align: center;
+    }
+    .sm-text-xlg {
+        font-size: 70px;
+    }
+    
+    .sm-text-lg {
+        font-size: 50px;
+    }
+    
+    .sm-text-md {
+        font-size: 40px;
+    }
+    
+    .sm-font-sm {
+        font-size: 14px;
+    }
+    
+    .sm-text-xm {
+        font-size: 12px;
+    }
+    .sm-w-100 {
+        width: 100%;
+    }
+}
+

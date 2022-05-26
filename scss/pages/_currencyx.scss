@@ -1,0 +1,149 @@
+#currency_x {
+    .banner {
+        background-image: url(../images/bg-CX.png);
+        background-size: 827px;
+        padding: 61px 0 0px;
+        background-repeat: no-repeat;
+        background-position: -40% top;
+        background-color: black;
+        .path {
+            margin-bottom: 74px;
+        }
+        .left-panel {
+            > img {
+                margin-bottom: 43px;
+            }
+        }
+        .right-panel {
+            padding-left: 150px;
+            p {
+                margin-bottom: 52px;
+            }
+        }
+        .ifame {
+            padding-top: 129px;
+            padding-bottom: 132px;
+        }
+        .explain {
+            background-image: url(../images/bg-CX1.png);
+            background-size: contain;
+            background-position: right;
+            background-repeat: no-repeat;
+            padding: 80px 0 132px;
+            .text-xlg {
+                line-height: 1.1;
+                margin-bottom: 70px;
+            }
+            .btn-leap {
+                margin-top: 58px;
+            }
+        }
+        .for {
+            
+            position: relative;
+            padding: 335px 0 351px;
+            overflow: hidden;
+            img {
+                position: absolute;
+                width: 865px;
+                top: -100px;
+                left: -200px;
+            }
+            .text-xlg {
+                margin-bottom: 79px;
+            }
+            .description {
+                padding-right: 180px;
+            }
+            .btn-leap {
+                margin-top: 58px;
+            }
+        }
+    }
+
+    .exchange {
+        background-image: url(../images/bg-CX3.png);
+        background-repeat: no-repeat;
+        background-size: 1200px;
+        background-position: right top;
+        padding: 118px 0 0;
+        .text-xlg {
+            line-height: 1.1;
+        }
+        .steps {
+            margin: 65px 0 135px 0;
+            .item {
+                padding: 10px;
+                >div {
+                    background: rgba(83, 179, 203, 0.1);
+                    padding: 10px 20px;
+                    border: 1px solid $blue;
+                }
+
+                &:first-child >div {
+                    border-top-left-radius: 40px;
+                }
+                &:last-child >div {
+                    border-bottom-right-radius: 40px;
+                }
+                .number {
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 0;
+                }
+
+                .text {
+                    font-size: 25px;
+                    margin-bottom: 0;
+                    line-height: 1.2;
+                    span {
+                        width: 100px;
+                        height: 59px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .partners {
+            a {
+                display: inline-block;
+                margin-right: 92px;
+                margin-top: 96px;
+                margin-bottom: 200px;
+            }
+        }
+    }
+    // responsive
+    @media (max-width: 768px) {
+        .banner {
+            .right-panel {
+                padding-left: 15px;
+            }
+            background-size: 90%;
+            background-position: center top;
+            .btn-leap {
+                margin: 0 auto;
+            }
+            .for {
+                padding: 80px 15px;
+                .description {
+                    padding-right: 0px;
+                }
+                img {
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        .exchange {
+            background-size: 100%;
+            .partners {
+                a {
+                    margin: 0 0 30px;
+                }
+            }
+        }
+    }
+}

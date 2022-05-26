@@ -1,0 +1,177 @@
+#aboutus {
+    .story {
+        .image {
+            width: 50%;
+            float: left;
+            background-image: url(../images/aboutus1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            img {
+                width: 100%;
+                display: none;
+            }
+        }
+        .description {
+            width: 50%;
+            float: right;
+            display: flex;
+            align-items: center;
+            padding-left: 154px;
+            padding-right: calc(50% - 544px);
+            padding-top: 219px;
+            padding-bottom: 100px;
+        }
+    }
+
+    .gradient-text {
+        padding: 86px 0 66px;
+        .container .row p {
+            font-size: 57px;
+            font-weight: 300;
+            opacity: 60%;
+            background: linear-gradient(to bottom right, #53B3CB, #11151C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .story2 {
+        margin-top: 55px;
+        .description {
+            width: 40%;
+            float: left;
+            display: flex;
+            align-items: center;
+            padding-right: 59px;
+            padding-left: calc(50% - 530px);
+        }
+        .image {
+            width: 60%;
+            float: right;
+            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: visible;
+            margin-bottom: -50px;
+            img {
+                width: auto;
+                height: 400px;
+                z-index: 100;
+                position: relative;
+            }
+        }
+    }
+
+    .mission {
+        padding-top: 140px;
+        padding-bottom: 85px;
+        .title {
+            margin-bottom: 31px;
+        }
+        .text-xlg {
+            margin-bottom: 23px;
+            line-height: 1.1;
+        }
+    }
+
+    .identity {
+        position: relative;
+        .image {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            img {
+                // width: 1264px;
+            }
+            // background-image: url(../images/red-wire.png);
+            // background-size: 1200px;
+            // background-position: calc(50% + 270px) -157px;
+            // background-repeat: no-repeat;
+        }
+        padding: 135px 0;
+        .text-xlg {
+            margin-bottom: 62px;
+        }
+    }
+
+    
+    @media (max-width: 1200px) {
+        .story {
+            .description {
+                padding-right: calc(50% - 463px);
+            }
+        }
+        .story2 {
+            .description {
+                padding-left: calc(50% - 463px);
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        .story {
+            .description {
+                padding-right: calc(50% - 463px);
+            }
+        }
+        .story2 {
+            .description {
+                padding-left: calc(50% - 463px);
+            }
+        }
+    }
+
+    // responsive
+    @media (max-width: 768px) {
+        .story {
+            flex-direction: column;
+            .image {
+                background-image: unset;
+                width: 100%;
+                img {
+                    display: block;
+                }
+            }
+            .description {
+                width: 100%;
+                padding: 50px 15px;
+            }
+        }
+        .gradient-text {
+            padding-top: 0;
+            .container {
+                .row {
+                    p {
+                        font-size: 40px;
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
+
+        .story2 {
+            .description {
+                width: 100%;
+                padding: 0 15px;
+            }
+            .image {
+                width: 100%;
+                padding: 0 15px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .identity {
+            padding: 100px 0;
+            .image {
+                top: 0;
+                left: 0;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

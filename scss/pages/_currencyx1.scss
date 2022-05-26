@@ -1,0 +1,149 @@
+#currency_x1 {
+    .banner {
+        background-color: #010000;
+        background-image: url(../images/crypto.png);
+        background-size: contain;
+        background-position: 0 -80px;
+        background-repeat: no-repeat;
+        .left-panel {
+            padding-top: 397px;
+            .font-oscine-bold {
+                font-size: 60px;
+                line-height: 1.1;
+            }
+        }
+
+        .right-panel {
+            padding-top: 150px;
+            padding-left: 138px;
+            .rate {
+                background: rgba(83, 179, 203, 0.1);
+                border: 1px $blue solid;
+                padding: 18px 27px;
+                border-top-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+                margin-bottom: 42px;
+                .token {
+                    font-size: 43px;
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 0;
+                }
+                ul {
+                    li {
+                        display: flex;
+                        font-size: 23px;
+                        align-items: center;
+                        margin-bottom: 24px;
+                        span {
+                            
+                        }
+                        p {
+                            margin-bottom: 0;
+                            margin-left: 21px;
+                            font-size: 23px;
+                        }
+                    }
+                }
+            }
+            > p {
+                margin-bottom: 36px;
+            }
+
+        }
+
+        .iframe {
+            margin-top: 59px;
+            margin-bottom: 158px;
+        }
+    }
+
+    .buy-token {
+        padding: 142px 0 160px 0;
+        .steps {
+            margin: 65px 0 135px 0;
+
+            .item {
+                padding: 10px;
+                >div {
+                    padding: 10px 20px;
+                    border: 1px solid white;
+                }
+
+                &:first-child >div {
+                    border-top-left-radius: 40px;
+                }
+                &:last-child >div {
+                    border-bottom-right-radius: 40px;
+                }
+                .number {
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 0;
+                }
+
+                .text {
+                    font-size: 25px;
+                    margin-bottom: 0;
+                    line-height: 1.2;
+                    span {
+                        width: 100px;
+                        height: 59px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+
+        .relates {
+            margin-top: 78px;
+            a {
+                margin-right: 92px;
+            }
+        }
+    }
+    // responsive
+    @media (max-width: 768px) {
+        .banner {
+            background-position: 0 top;
+            .left-panel {
+                padding-top: 200px;
+                .font-oscine-bold {
+                    font-size: 40px;
+                }
+            }
+            .right-panel {
+                padding: 40px 25px;
+                .rate {
+                    .token {
+                        font-size: 30px;
+                    }
+                    ul {
+                        li {
+                            p {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+                a.btn-leap {
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .buy-token {
+            padding: 50px 0;
+            .steps {
+                margin-bottom: 30px;
+            }
+            .relates {
+                text-align: center;
+                a {
+                    margin: 10px 0;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

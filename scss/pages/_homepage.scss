@@ -1,0 +1,343 @@
+#home {
+    .banner {
+        background-image: url(../images/iphone.png);
+        background-position: calc(50% + 340px) top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 620px;
+        position: relative;
+    //   background-position: center;
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
+        .left-panel {
+            color: white;
+            h1 {
+                font-size: 70px;
+                font-weight: 700;
+                margin: 173px 0 79px;
+                font-family: 'Oscine Bold';
+            }
+            .mobile-phone {
+                display: none;
+            }
+            p {
+                font-size: 18px;
+                margin-bottom: 0px;
+                width: 400px;
+            }
+            .links {
+                display: flex;
+                align-items: center;
+                padding-bottom: 30px;
+                padding-top: 30px;
+                img {
+                    margin-right: 10px;
+                }
+            }
+            .download {
+                display: none;
+            }
+        }
+    
+        button.msg {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            bottom: 42px;
+            right: 42px;
+        }
+    }
+    
+    .category {
+        padding: 250px 0;
+        .item {
+            padding: 0 30px;
+            // &:first-child {
+            //     padding-left: 0;
+            // }
+            // &:last-child {
+            //     padding-right: 0;
+            // }
+            .img {
+                height: 172px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                margin-bottom: 65px;
+                // img {
+                // }
+            }
+            h3 {
+                font-size: 30px;
+                font-weight: 700;
+                margin-bottom: 35px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            p {
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+    
+    .roadmap {
+        background-image: url(../images/bg.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        .item {
+            padding-top: 103px;
+            padding-bottom: 147px;
+            .title h1 {
+                font-size: 70px;
+                margin-bottom: 100px;
+            }
+            .description {
+                p {
+                    font-size: 18px;
+                }
+                .btn-leap {
+                    margin-top: 52px;
+                    margin-bottom: 31px;
+                    text-transform: uppercase;
+                }
+                a.link {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    
+    .app-status {
+        div.container {
+            .row {
+                justify-content: space-between;
+                padding-bottom: 58px;
+            }
+            .item {
+                text-align: center;
+                padding: 65px 0px;
+                display: flex;
+                > div {
+                    width: 120px;
+                }
+                
+                h1 {
+                    font-size: 57px;
+                    margin-bottom: 28px;
+                }
+                .grey-border.vertical {
+                    display: none;
+                }
+                p {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+    .privacy {
+        padding: 151px 0;
+        h1.title {
+            margin-bottom: 100px;
+        }
+        .description {
+            margin-bottom: 59px;
+        }
+        .privacy-list {
+            .item {
+                padding-top: 63px;
+                img {
+                    margin-bottom: 38px;
+                    height: 40px;
+                }
+                h3 {
+                    font-size: 20px;
+                    height: 90px;
+                }
+                p {
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    
+    .guide {
+        padding-top: 114px;
+        padding-bottom: 247px;
+        h1.title {
+            font-size: 80px;
+            margin-bottom: 35px;
+        }
+        .tabs {
+            margin-top: 25px;
+            margin-bottom: 60px;
+            a {
+                padding-right: 40px;
+                font-size: 20px;
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+        .left-panel {
+            border: 1px solid $grey-border;
+            border-radius: 30px 0 30px 0;
+            padding: 60px 24px 60px 45px;
+            p {
+                padding-bottom: 27px;
+                margin: 0;
+                &:last-child {
+                    padding-bottom: unset;
+                }
+            }
+        }
+    }
+    
+    .phone2 {
+        background-image: url(../images/iphone2.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% - 307px) top;
+        padding-top: 142px;
+        height: 905px;
+    }
+    
+    // responsive
+    @media (max-width: 768px) {
+        .banner {
+            background-image: unset;
+            .left-panel {
+                text-align: center;
+                h1 {
+                    text-align: center;
+                    margin-top: 40px;
+                    font-size: 50px;
+                    margin-bottom: 0;
+                }
+                .mobile-phone {
+                    display: block;
+                    img {
+                        width: 100%
+                    }
+                }
+                p {
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 230px;
+                }
+                .links {
+                    display: none;
+                }
+                .download {
+                    display: block;
+                    margin: 22px auto 30px;
+                }
+            }
+            .msg {
+                display: none;
+            }
+        }
+    
+        .category {
+            padding-top: 0;
+            .row {
+                justify-content: center;
+            }
+            .item {
+                margin-top: 78px;
+                text-align: center;
+                width: 277px;
+            }
+        }
+    
+        .roadmap {
+            background-size: 160%;
+            background-position-y: 200px;
+            .item {
+                padding-bottom: 0;
+                &:last-child {
+                    padding-bottom: 61px;
+                }
+                .title h1 {
+                    font-size: 50px;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+                .description {
+                    text-align: center;
+                }
+            }
+        }
+    
+        .app-status {
+            .container {
+                .row {
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    .grey-border {
+                        margin-bottom: 33px;
+                    }
+                    .item {
+                        width: 100%;
+                        padding: 13px 0;
+                        > div {
+                            display: flex;
+                            width: 100%;
+                            align-items: center;
+                            h1 {
+                                width: 50%;
+                                text-align: right;
+                                margin: 0;
+                                padding-right: 28px;
+                            }
+                            p {
+                                width: 90px;
+                                margin: 0;
+                                text-align: left;
+                                padding-left: 28px;
+                                font-size: 16px;
+                            }
+                            .grey-border.vertical {
+                                width: 0.5px;
+                                display: block;
+                                height: calc(100% + 26px);
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .privacy {
+            padding: 50px 0;
+            h1.title {
+                margin-bottom: 35px;
+            }
+        }
+    
+        .guide {
+            padding-bottom: 60px;
+            h1.title {
+                font-size: 50px;
+            }
+            .left-panel {
+                margin: 0 22px;
+            }
+        }
+    
+        .phone2 {
+            padding-top: 50px;
+            background-position: center 26%;
+            background-size: 130%;
+            height: 705px;
+            .btn {
+                margin-top: 305px;
+            }
+        }
+    }
+}

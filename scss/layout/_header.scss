@@ -1,0 +1,18 @@
+header .container .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0; }
+    header .container .navbar .navbar-collapse {
+      flex-grow: unset; }
+    header .container .navbar ul.navbar-nav li a {
+      color: #fff;
+      opacity: 0.5;
+      text-transform: uppercase;
+      padding: 0 20px;
+      font-size: 14px;
+      letter-spacing: 1.8px;
+      font-weight: 300; }
+  
+  @media (max-width: 768px) {
+    header .download {
+      display: none; } }
